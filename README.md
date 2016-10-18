@@ -1,6 +1,6 @@
 #elasticgraph
 
-This is a very simple framework bo bind d3.js and leaflet.js visualisations with an elasticsearch data strage
+This is a very simple framework to bind d3.js and leaflet.js visualisations with an elasticsearch data strage
 To install simply follow the instructions:
 ```
 git clone https://github.com/jodyphelan/elasticgraph.git

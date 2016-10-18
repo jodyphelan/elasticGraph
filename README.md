@@ -15,9 +15,9 @@ First you must start your instance of elasticsearch:
 ```
 Keep the instance running in the background. Initialise the database to store geographic points and then load the data:
 ```
-curl -XPOST 'localhost:9200/graph' -d'{"mappings": {"nodes": {"properties": {"location": {"type": "geo_point"}}}}}'
-curl -XPOST 'localhost:9200/graph/nodes/_bulk?pretty' --data-binary "@nodes.json"
-curl -XPOST 'localhost:9200/graph/edges/_bulk?pretty' --data-binary "@edges.json"
+curl -XPOST 'localhost:9200/test' -d'{"mappings": {"nodes": {"properties": {"location": {"type": "geo_point"}}}}}'
+curl -XPOST 'localhost:9200/test/nodes/_bulk?pretty' --data-binary "@nodes.json"
+curl -XPOST 'localhost:9200/test/edges/_bulk?pretty' --data-binary "@edges.json"
 ```
 
 Then start a python HTTP server:

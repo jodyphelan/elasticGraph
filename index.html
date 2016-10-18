@@ -194,7 +194,7 @@ function updateDoc(node){
 function searchByGPS(lat,lng,dist){
   dist = dist+"km";
   client.search({
-    index: 'graph',
+    index: 'test',
     type: 'nodes',
     body: {
       "query" : {

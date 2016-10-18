@@ -447,7 +447,7 @@ var simulation = d3.forceSimulation()
   function initMap(){
 
     d3.select("#mapDiv").style("width","100%").style("height","100%")
-    map = L.map('mapDiv').setView([51.478333, -0.053547], 12);
+    map = L.map('mapDiv').setView([0,0], 4);
     L.tileLayer("http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff[difference],$fff[@23],$fff[hsl-saturation@20])/{z}/{x}/{y}.png").addTo(map);
 //    L.tileLayer("http://localhost/osm/{z}/{x}/{y}.png").addTo(map);
 

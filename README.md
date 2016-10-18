@@ -9,8 +9,10 @@ bash cmd
 ```
 
 I have supplied some dummy data that you can upload.
-First you must start your instance of elasticsearch:
+First you must make some changes to the elasticsearch config file and then start your instance of elasticsearch:
 ```
+echo "http.cors.enabled: true" >> elasticsearch-2.4.1/config/elasticsearch.yml
+echo "http.cors.allow-origin: /https?:\/\/localhost(:[0-9]+)?/" >> elasticsearch-2.4.1/config/elasticsearch.yml
 ./elasticsearch-2.4.1/bin/elasticsearch
 ```
 Keep the instance running in the background. Initialise the database to store geographic points and then load the data:

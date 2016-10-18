@@ -26,3 +26,13 @@ Then start a python HTTP server:
 ```
 python -m SimpleHTTPServer
 ```
+
+
+##Basic Function
+Explore the graph by dynamically querying elasticsearch using the forms.
+*Try searching for ```id3``` in the top form.
+*Try searching by geographic location in the form of ```latitude,longitude,distance``` (distance is in km)
+
+Once you have found some nodes you can find out if they are connected to other nodes by right clicking on them.
+
+This is it for now! Have fun!
